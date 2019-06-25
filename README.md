@@ -12,7 +12,7 @@ Today's project is to use the `ClockView` we built today and recreate the World 
 
 * Create a new single view application project named "Global Time".
 * Discard the view controller scene in the storyboard and its associated class.
-* Copy in the `ClockView.swift` file from today's guided project (or from this repo).
+* Copy in the `ClockView.swift` file from this repo.
 
 ### Storyboard Tasks
 
