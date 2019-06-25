@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project supports the module _View Animations II - Advanced Drawing_ in the sprint _iOS User Interface_.
+This project supports the module _Animation II - Advanced Drawing_ in the sprint _iOS User Interface_.
 
 Today's project is to use the `ClockView` we built today and recreate the World Clock tab of the Apple Clock app. You'll present the user with a list of time zones and once chosen, you'll display a table of cells containing the time zone name and a clock view displaying the time for that zone.
 
