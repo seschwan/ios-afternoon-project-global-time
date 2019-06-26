@@ -19,8 +19,8 @@ Today's project is to use the `ClockView` we built today and recreate the World 
 #### GlobalTimesTableViewController
 * Create a table view scene embedded in a navigation controller. Use the custom cell style.
 * Make the cell height for the entire tableview 100 pts (click the tableview in the document outline, go to the size inspector and change the row height).
-* Design a cell with a label for the time zone name, and a UIView to show the clock view instance. After you set the cusom class of that view to `ClockView`, you should see a live preview of the clock face (w/ hands at 12). Be sure to add enough rules to properly constrain each subview (and remember UIView objects have no intrinsic size, so x, y, with, and height will need to be constrained).
-* Add a bar button item and set it to the buit in system item style of "add".
+* Design a cell with a label for the time zone name, and a UIView to show the clock view instance. After you set the custom class of that view to `ClockView`, you should see a live preview of the clock face (w/ hands at 12). Be sure to add enough rules to properly constrain each subview (and remember UIView objects have no intrinsic size, so x, y, width, and height will need to be constrained).
+* Add a bar button item and set it to the built in system item style of "add".
 
 #### TimeZonesTableViewController
 * Create another table view controller scene, embed that one in its own navigation controller, and then create a segue between the + button and the navigation controller you just created. Choose `present modally` for the segue kind.
@@ -64,7 +64,7 @@ Today's project is to use the `ClockView` we built today and recreate the World 
     * Grab the appropriate time zone identifier from the array property.
     * The string that's fetched looks just like it did in the other table. We also want to only display the city name in this table for each one. Grab the same code you used in the other table to parse out the city name and display it in the `textLabel` of this cell.
 * Override the function `tableView(_:didSelectRowAt:)` and do two things:
-    * Deslect the row using the `indexPath` passed in.
+    * Deselect the row using the `indexPath` passed in.
     * Call your delegate method and pass the appropriate time zone identifier from the array property (hint: use the `indexPath` for this too).
 * Create an `IBAction` method that responds to taps of the cancel button. In the method body, just dismiss the view (remembering that this view is embedded in a navigation controller, so it is the view that needs to be dismissed so the whole view stack will transition away).
 * Wire up that action to the cancel bar button item in the storyboard.
